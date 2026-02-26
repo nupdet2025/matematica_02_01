@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__PauseFocusLost__Active !== "undefined") {
 gdjs.evtsExt__PauseFocusLost__Active = {};
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x94e560 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x1397618 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var sound_manager = runtimeScene.getGame().getSoundManager();
 var volumen = sound_manager.getGlobalVolume();
@@ -28,7 +28,7 @@ gdjs.evtsExt__PauseFocusLost__Active.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x94e560(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x1397618(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

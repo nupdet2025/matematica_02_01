@@ -34,7 +34,7 @@ gdjs.FinalCode.GDAcerto5Objects1= [];
 gdjs.FinalCode.GDAcerto5Objects2= [];
 
 
-gdjs.FinalCode.asyncCallback17072212 = function (runtimeScene, asyncObjectsList) {
+gdjs.FinalCode.asyncCallback9477100 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.FinalCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Introducao", false);
 }gdjs.FinalCode.localVariables.length = 0;
@@ -48,7 +48,7 @@ gdjs.FinalCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.FinalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.FinalCode.asyncCallback17072212(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.FinalCode.asyncCallback9477100(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -98,7 +98,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\victory.mp3", 2, true, 60, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\victory.mp3", 2, true, 20, 1);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audio_final.mp3", 3, false, 100, 1);
 }}
 
 }
@@ -119,19 +120,9 @@ for (var i = 0, k = 0, l = gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length;i<l
 }
 gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = k;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length;i<l;++i) {
-    if ( gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.FinalCode.GDbtn_9595reiniciarObjects1[k] = gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i];
-        ++k;
-    }
-}
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = k;
-}
-if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\btn_press.mp3", false, 100, 1);
 }{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 2, 0, 2);
+}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 3, 0, 1);
 }
 { //Subevents
 gdjs.FinalCode.eventsList0(runtimeScene);} //End of subevents
